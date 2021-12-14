@@ -29,7 +29,6 @@ struct CreateExpenseView: View {
                         .cornerRadius(8)
                 }.padding()
                 .shadow(radius: 2)
-
             }
         }
     }
