@@ -20,6 +20,7 @@
 		43F33A182768E0CF00C90CCC /* ExpenseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F33A172768E0CF00C90CCC /* ExpenseRepository.swift */; };
 		43F33A1A2769018B00C90CCC /* CreateExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F33A192769018B00C90CCC /* CreateExpenseViewModel.swift */; };
 		43F33A1E2769022A00C90CCC /* CreateExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F33A1D2769022A00C90CCC /* CreateExpenseView.swift */; };
+		43F33A21276916C000C90CCC /* EconomicContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43F33A1F276916C000C90CCC /* EconomicContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		43F33A172768E0CF00C90CCC /* ExpenseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRepository.swift; sourceTree = "<group>"; };
 		43F33A192769018B00C90CCC /* CreateExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExpenseViewModel.swift; sourceTree = "<group>"; };
 		43F33A1D2769022A00C90CCC /* CreateExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExpenseView.swift; sourceTree = "<group>"; };
+		43F33A20276916C000C90CCC /* EconomicContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EconomicContainer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				43F33A112768D7F900C90CCC /* ExpenseModel.swift */,
+				43F33A1F276916C000C90CCC /* EconomicContainer.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				43F33A1E2769022A00C90CCC /* CreateExpenseView.swift in Sources */,
 				43F339F42768CE5D00C90CCC /* economicApp.swift in Sources */,
 				43F33A0E2768D14500C90CCC /* Utils.swift in Sources */,
+				43F33A21276916C000C90CCC /* EconomicContainer.xcdatamodeld in Sources */,
 				43F33A162768DE6A00C90CCC /* ConversionUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +429,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		43F33A1F276916C000C90CCC /* EconomicContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				43F33A20276916C000C90CCC /* EconomicContainer.xcdatamodel */,
+			);
+			currentVersion = 43F33A20276916C000C90CCC /* EconomicContainer.xcdatamodel */;
+			path = EconomicContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 43F339E82768CE5D00C90CCC /* Project object */;
 }

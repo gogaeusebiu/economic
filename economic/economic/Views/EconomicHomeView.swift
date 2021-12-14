@@ -16,10 +16,12 @@ struct EconomicHomeView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                List(economicHomeViewModel.expenses) { expense in
-                    ExpenseCellView(expense: expense)
-                        .cornerRadius(5)
-                        .shadow(radius: 5)
+                List {
+                    ForEach(economicHomeViewModel.expenses) { expense in
+                        ExpenseCellView(expense: expense)
+                            .cornerRadius(5)
+                            .shadow(radius: 5)
+                    }.onDelete(perform: economicHomeViewModel.removeExpense(with:))
                 }
                 
                 VStack {

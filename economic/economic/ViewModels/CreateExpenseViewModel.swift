@@ -10,7 +10,7 @@ import Combine
 final class CreateExpenseViewModel: ObservableObject {
     @Published var expenseRepository = ExpenseRepository()
     
-    func addExpense() {
-        expenseRepository.addExpense()
+    func addExpense(_ company: String, _ totalAmount: Double, _ currency: String) {
+        expenseRepository.addExpense(company, totalAmount, currency)
     }
 }

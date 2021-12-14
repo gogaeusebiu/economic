@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ExpenseCellView: View {
-    var expense: ExpenseModel
+    var expense: ExpenseEntity
     
     private func expenseCreatedDateString() -> String {
-        return AppDateFormatter.sharedManager.stringFromDate(date: expense.createdDate)
+        return (expense.createdDate != nil) ? AppDateFormatter.sharedManager.stringFromDate(date: expense.createdDate!) : ""
     }
     
     var body: some View {
@@ -23,11 +23,11 @@ struct ExpenseCellView: View {
             HStack {
                 Text(String(format: "%.2f", expense.totalAmount)).font(.largeTitle).padding(.all)
                 Spacer()
-                Text(expense.currency).font(.largeTitle).padding(.all)
+                Text(expense.currency ?? "").font(.largeTitle).padding(.all)
             }
             
             HStack {
-                Text(expense.company).font(.system(size: 12).bold()).padding(.all)
+                Text(expense.company ?? "").font(.system(size: 12).bold()).padding(.all)
                 Spacer()
             }
         }.background(Color(.systemGray5))

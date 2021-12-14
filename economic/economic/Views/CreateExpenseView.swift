@@ -18,7 +18,7 @@ struct CreateExpenseView: View {
                 Text("Create Expense").font(.largeTitle)
                 Spacer()
                 Button {
-                    createExpenseViewModel.addExpense()
+                    createExpenseViewModel.addExpense("Delta", 2, "EUR")
                     didAddExpense()
                 } label: {
                     Text("Create Deposit")
