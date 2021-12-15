@@ -10,7 +10,6 @@ import CoreData
 import Foundation
 
 final class ExpenseRepository: ObservableObject {
-    @Published var expensesDummyData: [ExpenseModel] = Utils.expensesDummyData
     @Published var expenses: [ExpenseEntity] = []
 
     private let container: NSPersistentContainer
