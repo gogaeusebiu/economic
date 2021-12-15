@@ -10,7 +10,6 @@ import Foundation
 
 final class CreateExpenseViewModel: ObservableObject {
     @Published var expenseRepository = ExpenseRepository()
-    @Published var expenses: [ExpenseEntity] = []
 
     @Published var expenseCompanyName = ""
     @Published var expenseTotalAmount = ""
@@ -69,9 +68,6 @@ final class CreateExpenseViewModel: ObservableObject {
     }
     
     init() {
-        expenseRepository.$expenses.assign(to: \.expenses, on: self)
-            .store(in: &cancellables)
-        
         isCompanyNameEmptyPublisher
             .receive(on: RunLoop.main)
             .map {
