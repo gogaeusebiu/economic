@@ -17,8 +17,43 @@ struct CreateExpenseView: View {
             VStack {
                 Text("Create Expense").font(.largeTitle)
                 Spacer()
+                VStack(spacing:5) {
+                    TextField("Company name", text: $createExpenseViewModel.expenseCompanyName)
+                        .padding()
+                        .background(Color(.systemGray6))
+                        .cornerRadius(5)
+                        .shadow(radius: 2)
+
+                    
+                    Text(createExpenseViewModel.inlineErrorForCompanyName)
+                        .foregroundColor(.red)
+                        .font(.system(size: 12))
+                }.padding()
+                Spacer()
+                VStack(spacing:5) {
+                    TextField("Total amount", text: $createExpenseViewModel.expenseTotalAmount)
+                        .padding()
+                        .background(Color(.systemGray6))
+                        .cornerRadius(5)
+                        .shadow(radius: 2)
+
+                    
+                    Text(createExpenseViewModel.inlineErrorForTotalAmount)
+                        .foregroundColor(.red)
+                        .font(.system(size: 12))
+                }.padding()
+                Spacer()
+                VStack(spacing: 5) {
+                    DropdownView(dropdownTitle: "Choose currency", optionList: Utils.expenseCurencies, selectedOption: $createExpenseViewModel.currencySelected)
+                    .padding()
+                    
+                    Text(createExpenseViewModel.inlineErrorForCurrency)
+                        .foregroundColor(.red)
+                        .font(.system(size: 12))
+                }
+                Spacer()
                 Button {
-                    createExpenseViewModel.addExpense("Delta", 2, "EUR")
+                    createExpenseViewModel.addExpense()
                     didAddExpense()
                 } label: {
                     Text("Create Deposit")
@@ -28,6 +63,7 @@ struct CreateExpenseView: View {
                         .foregroundColor(.white)
                         .cornerRadius(8)
                 }.padding()
+                .disabled(!createExpenseViewModel.isValid)
                 .shadow(radius: 2)
             }
         }

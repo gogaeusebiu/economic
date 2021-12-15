@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43BECE1E2769FFED0095CEFF /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BECE1D2769FFED0095CEFF /* DropdownView.swift */; };
 		43F339F42768CE5D00C90CCC /* economicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F339F32768CE5D00C90CCC /* economicApp.swift */; };
 		43F339F82768CE6000C90CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F339F72768CE6000C90CCC /* Assets.xcassets */; };
 		43F339FB2768CE6000C90CCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F339FA2768CE6000C90CCC /* Preview Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43BECE1D2769FFED0095CEFF /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
 		43F339F02768CE5D00C90CCC /* economic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = economic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F339F32768CE5D00C90CCC /* economicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = economicApp.swift; sourceTree = "<group>"; };
 		43F339F72768CE6000C90CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				43F33A132768DD4800C90CCC /* ExpenseCellView.swift */,
+				43BECE1D2769FFED0095CEFF /* DropdownView.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				43F33A0A2768D0ED00C90CCC /* EconomicHomeView.swift in Sources */,
 				43F33A102768D7B500C90CCC /* EconomicHomeViewModel.swift in Sources */,
 				43F33A1A2769018B00C90CCC /* CreateExpenseViewModel.swift in Sources */,
+				43BECE1E2769FFED0095CEFF /* DropdownView.swift in Sources */,
 				43F33A142768DD4800C90CCC /* ExpenseCellView.swift in Sources */,
 				43F33A1E2769022A00C90CCC /* CreateExpenseView.swift in Sources */,
 				43F339F42768CE5D00C90CCC /* economicApp.swift in Sources */,

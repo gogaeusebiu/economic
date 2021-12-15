@@ -22,4 +22,6 @@ class Utils {
         ExpenseModel(id: "3", company: "Auto World", currency: "RON", totalAmount: 100, createdDate: Date()),
         ExpenseModel(id: "4", company: "Auto World", currency: "EUR", totalAmount: 25, createdDate: Date())
     ]
+    
+    static let expenseCurencies = ["EUR", "USD", "RON"]
 }
